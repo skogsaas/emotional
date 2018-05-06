@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emotional", "Emotional\Emotional.csproj", "{DAF37B7B-2C2D-47E6-B359-7CA74BB71D9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAF37B7B-2C2D-47E6-B359-7CA74BB71D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF37B7B-2C2D-47E6-B359-7CA74BB71D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF37B7B-2C2D-47E6-B359-7CA74BB71D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF37B7B-2C2D-47E6-B359-7CA74BB71D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D5D46DC-8D3C-458A-A096-9449B691F813}
+	EndGlobalSection
+EndGlobal
