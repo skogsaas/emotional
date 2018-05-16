@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Websocket Debugger</title>
+</head>
+<body>
+    <img id="capture">
+
+    <script type="text/javascript">
+        var ws = new WebSocket('ws://localhost:63829/ws')
+        ws.addEventListener('open', _ => {
+            ws.send(JSON.stringify({ type: 'STARTCAMERA' }))
+        });
+        ws.addEventListener('message', msg => {
+
+            var data = JSON.parse(msg.data);
+
+            console.dir(data);
+
+            if (data.type == 'FACECROP') {
+                data.faces.forEach(face => {
+                    var image = document.getElementById("capture")
+                    image.src = 'data:image/jpg;base64,' + face.imageBase64;
+                });
+            }
+        });
+    </script>
+</body>
+</html>
